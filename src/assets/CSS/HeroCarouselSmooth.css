@@ -1,0 +1,53 @@
+.hero-carousel-elegant {
+  position: relative;
+  height: 60vh; /* slightly smaller height */
+  margin: 3rem 0; /* margin top and bottom */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #F9F9F9;
+  overflow: hidden;
+  color: #4A2E38;
+}
+
+.carousel-track {
+  display: flex;
+  gap: 2rem;
+  width: max-content;
+  animation: scrollLeft 35s ease-in-out infinite alternate; /* ping-pong effect */
+}
+
+.carousel-card {
+  flex: 0 0 280px; /* slightly narrower */
+  height: 380px; /* slightly smaller */
+  border-radius: 16px;
+  background-size: cover;
+  background-position: center;
+  border: 5px solid #7C5463;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+/* Smooth scroll left-right */
+@keyframes scrollLeft {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); } /* slides left, then reverse automatically */
+}
+
+/* Text below carousel */
+.carousel-text {
+  margin-top: 2rem;
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  color: #4A2E38;
+  letter-spacing: 1px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Optional: subtle hover effect for elegance */
+.carousel-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+}
