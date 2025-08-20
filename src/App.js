@@ -4,14 +4,17 @@ import Hero from './assets/scripts/Hero';
 import Plans from './assets/scripts/Plans';
 import Features from './assets/scripts/Features';
 import HeroCarouselSmooth from './assets/scripts/HeroCarouselSmooth';
+import Foo
+
 
 function App() {
   return (
     <div className="App">
-      < Hero />
+        < Hero />
       < HeroCarouselSmooth />
       < Plans />
       < Features />
+
     </div>
   );
 }
